@@ -1,0 +1,145 @@
+.IE1{
+    position: absolute;
+    height: 90%; /* Altura de la línea vertical */
+    left: 40%; /* Mueve la línea hacia la derecha */
+    width: 500px; /* Ancho de la caja */
+    height: 25%; /* Altura de la caja */
+    /*border: 1px solid black; /* Borde de la caja */
+    padding: 10px;
+    margin-top: -10%;
+}
+.IE2{
+    margin-top: 13%;
+    position: absolute;
+    height: 25%; /* Altura de la línea vertical */
+    left: 40%; /* Mueve la línea hacia la derecha */
+    /*border: 1px solid black; /* Borde de la caja */
+    padding: 10px;
+    width: 500px; /* Ancho de la caja */
+
+}
+
+.tabla{
+    color: blueviolet;
+}
+table {
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+#total {
+    font-weight: bold;
+}
+.todo{
+    top: 10%;
+    left: 50%; /* Mueve la línea hacia la derecha */
+    color: hsla(20, 78%, 11%, 0.816);
+}
+
+body{
+
+    background-image: url(../Imagenes/categoria.png);
+}
+
+.bot1{
+    border-radius: 30px;
+    background-color: hsl(124, 74%, 43%); /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    padding: 2px 20px; /* Ajusta el espacio interno del botón según tus necesidades */
+    font-size: 16px; /* Tamaño de fuente del texto del botón */
+    border: none; /* Quita el borde del botón si no lo deseas */
+}
+.bot2{
+    border-radius: 20px;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+
+  }
+
+
+@media screen and (max-width: 768px) {
+    .IE1,
+    .IE2 {
+        width: 90%;
+        left: 5%;
+    }
+
+    .linea-vertical {
+        left: 15%;
+    }
+
+    .todo {
+        left: 25%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .IE1,
+    .IE2 {
+        width: 90%;
+        left: 5%;
+    }
+
+    .linea-vertical {
+        display: none;
+    }
+
+    .todo {
+        text-align: center;
+        left: 0;
+    }
+}
+
+.bot1 .bot2{
+     display: flex;
+  
+
+}
+.container1{
+    box-sizing: border-box;
+    background-color: hsla(194, 79%, 63%, 0.745);
+    opacity: 14;
+    border-radius: 20px;
+    padding: 1px 20px; 
+    width: 100%;
+    
+}
+header{
+    border-radius: 20px;
+    height: 100px;
+    background-color: hwb(0 97% 3% / 0.745);
+    opacity: 14;
+}
+
+.categorianame{
+    width: 40%;
+    height: 80px;
+    margin-left: 50%;
+    margin-top: -5%;
+}
+.crearcategoria{
+    padding: 8px 50px; 
+    width: 40%;
+
+}
+
+
+.aside{
+    background-color: #31e22b;
+}
+.tabIE{
+    margin-left: 35%;
+    
+}
+.cerrarsesioncategorias{
+    position: auto;
+    z-index: 2;
+    bottom: 10px;
+    margin-left: 87%;
+    border-radius: 20px;
+    background-color: blanchedalmond;
+}
+.montototal{
+    color: yellow;
+}

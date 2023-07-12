@@ -1,0 +1,90 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../Imagenes/negocio.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:  fixed;
+}
+.container{
+    width: 95%;
+    max-width: 400px;
+    padding: 20px;
+    background: rgb(247, 248, 250);
+    margin: auto;
+    margin-top: 3%;
+    box-sizing: border-box;
+}
+.titulo{
+    text-align: center;
+    border: solid black 1px;
+    border-style: dashed;
+}
+.padre{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    color: black;
+}
+.nombre,.user,.clave{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    padding: 10px;
+}
+input:focus{
+    outline: solid yellow 2px;
+}
+.boton {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+header {
+    text-align: center;
+}
+.todo{
+    width: 90%;
+    max-width: 1000px;
+    margin:0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.opcion {
+    text-align: center;
+}
+.opcion a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #4CAF50;
+    font-size: 14px;
+}
+
+@media screen and (max-width:600px){
+    .titulo{
+        display:none;
+    }
+    .tiu{
+        display: none;
+    }
+}
+
+@media (min-width: 600px) {
+    .opcion a {
+        display: inline-block;
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+}

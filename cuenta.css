@@ -1,0 +1,110 @@
+:root{
+    --azul:rgb(243, 244, 245);
+    --azulOscuro:#8DA9C4;
+    --fuente:'Quicksand', sans-serif;
+
+}
+    
+.body{
+    font-family: var(--fuente);
+    background-color: rgb(122, 74, 74);
+    
+    
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 90%;
+}
+
+.imagen{
+    background-image: url(../Imagenes/finanzas.jpg);
+    flex: 0 0 calc(60%);
+    background-position: center center;
+    background-size: cover;
+    height: 200px;   
+}
+
+.imagen::before{
+    content: '';
+    /*position: absolute;*/
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right,rgba(141,169,196,.5), rgba(19, 64, 116, .5) );
+
+}
+@media(min-width:768px){
+    .imagen{
+        height: auto;
+    }
+}
+
+@media(min-width:768px){
+   .container-formulario{
+       display: flex;
+   }
+}
+
+.formulario{
+    padding: 80px;
+    background-color: var(--azul);
+
+
+    
+}
+
+.inicio-formulario h2, h4, .input i, .texto p{
+    color:rgb(20, 20, 19);
+}
+
+.inicio-formulario .texto a{
+    color:black;
+}
+
+.inicio-formulario h2, h4{
+    font-size: 20px;
+    text-align: center;
+}
+
+.inicio-formulario input i{
+    font-size: 80px;
+    text-align: center;
+    display: inline;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.input input{
+    width: 89%;
+    padding: 10px 40px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.button input{
+    background-color:hsl(240, 3%, 6%);
+    color:rgb(152, 156, 167);
+    font-size:  22px;
+    font-weight: bold;
+    border: none;
+    transition: background-color .3s ease-in-out;
+    
+    
+}
+.link {
+    color: black;
+  }
+
+.cajita{
+        width: 90%;
+        max-width: 90%;
+        margin:0 auto;
+        padding: 20px;
+        box-sizing: border-box;
+        margin-top: 8%;
+        
+    }
